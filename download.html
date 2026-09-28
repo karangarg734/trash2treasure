@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Download useful recycling guides, educational materials, documents and resources from Trash2Treasure.">
+
+  <title>Downloads | Trash2Treasure</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f5fff7;
+      color: #173b24;
+      line-height: 1.6;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      height: 75px;
+      margin: auto;
+      padding: 0 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-size: 25px;
+      font-weight: bold;
+      color: #17863d;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+
+      border-radius: 50%;
+      background: #17863d;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 22px;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #244d31;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #18a34a;
+    }
+
+    .nav-btn {
+      background: #17863d;
+      color: white !important;
+
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+
+    .nav-btn:hover {
+      background: #0f6b2e;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .page-hero {
+      padding: 90px 25px;
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(232, 255, 238, 0.96),
+          rgba(193, 244, 207, 0.9)
+        );
+    }
+
+    .page-hero h1 {
+      font-size: 52px;
+      color: #124b27;
+      margin-bottom: 15px;
+    }
+
+    .page-hero h1 span {
+      color: #18a34a;
+    }
+
+    .page-hero p {
+      max-width: 700px;
+      margin: auto;
+
+      font-size: 18px;
+      color: #597060;
+    }
+
+
+    /* ================= COMMON ================= */
+
+    .section {
+      padding: 85px 25px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+      color: #124b27;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 650px;
+      margin: auto;
+      color: #617568;
+    }
+
+
+    /* ================= DOWNLOADS ================= */
+
+    .downloads-section {
+      background: #f5fff7;
+    }
+
+    .downloads-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .download-card {
+      background: white;
+      padding: 30px 25px;
+
+      border-radius: 20px;
+
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+
+      transition: 0.3s;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .download-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+    }
+
+    .download-icon {
+      width: 70px;
+      height: 70px;
+
+      margin-bottom: 20px;
+
+      border-radius: 18px;
+
+      background: #dff8e6;
+      color: #17863d;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 35px;
+    }
+
+    .file-type {
+      display: inline-block;
+      width: fit-content;
+
+      padding: 5px 12px;
+      margin-bottom: 12px;
+
+      border-radius: 20px;
+
+      background: #eaf9ee;
+      color: #17863d;
+
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .download-card h3 {
+      color: #176b35;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .download-card p {
+      color: #687b6d;
+      font-size: 14px;
+
+      margin-bottom: 25px;
+
+      flex-grow: 1;
+    }
+
+    .download-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 18px;
+
+      color: #819187;
+      font-size: 13px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      width: 100%;
+
+      padding: 12px 20px;
+
+      border-radius: 25px;
+
+      background: #17863d;
+      color: white;
+
+      text-decoration: none;
+      font-weight: bold;
+
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #0f6b2e;
+      transform: translateY(-2px);
+    }
+
+
+    /* ================= INFO SECTION ================= */
+
+    .info-section {
+      background: #eaf9ee;
+    }
+
+    .info-box {
+      max-width: 900px;
+      margin: auto;
+
+      padding: 40px;
+
+      background: white;
+
+      border-radius: 25px;
+
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+      text-align: center;
+    }
+
+    .info-icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .info-box h2 {
+      color: #124b27;
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .info-box p {
+      max-width: 700px;
+      margin: auto;
+
+      color: #617568;
+    }
+
+
+    /* ================= FAQ ================= */
+
+    .faq-section {
+      background: #f5fff7;
+    }
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: white;
+      margin-bottom: 15px;
+
+      border-radius: 12px;
+      overflow: hidden;
+
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-question {
+      width: 100%;
+
+      padding: 20px 25px;
+
+      border: none;
+      background: white;
+
+      text-align: left;
+
+      color: #176b35;
+      font-size: 17px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question span {
+      font-size: 25px;
+      transition: 0.3s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+
+      padding: 0 25px;
+
+      color: #687b6d;
+
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+
+    .faq-item.open .faq-question span {
+      transform: rotate(45deg);
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta {
+      max-width: 1050px;
+
+      margin: 80px auto;
+      padding: 60px 30px;
+
+      text-align: center;
+
+      border-radius: 30px;
+
+      background: linear-gradient(
+        135deg,
+        #176b35,
+        #25a653
+      );
+
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+
+      color: #d9f8e1;
+    }
+
+    .cta a {
+      display: inline-block;
+
+      padding: 13px 27px;
+
+      border-radius: 30px;
+
+      background: white;
+      color: #176b35;
+
+      text-decoration: none;
+      font-weight: bold;
+
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      transform: translateY(-3px);
+      background: #edfff2;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #103b20;
+      color: white;
+
+      padding: 50px 25px 25px;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li,
+    footer a {
+      color: #b8d4c0;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .copyright {
+      max-width: 1100px;
+      margin: 35px auto 0;
+
+      padding-top: 20px;
+
+      border-top: 1px solid rgba(255,255,255,0.15);
+
+      text-align: center;
+
+      color: #9dbba5;
+      font-size: 13px;
+    }
+
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 900px) {
+
+      .navbar {
+        height: auto;
+        padding: 15px 20px;
+
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .downloads-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+
+      .page-hero h1 {
+        font-size: 40px;
+      }
+
+      .page-hero p {
+        font-size: 16px;
+      }
+
+      .section-title h2 {
+        font-size: 32px;
+      }
+
+      .downloads-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .info-box {
+        padding: 30px 20px;
+      }
+
+      .info-box h2 {
+        font-size: 28px;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header>
+
+    <div class="navbar">
+
+      <div class="logo">
+        <div class="logo-icon">♻</div>
+        Trash2Treasure
+      </div>
+
+      <nav>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+         
+
+          <li>
+            <a href="/howwork.html">
+              How It Works
+            </a>
+          </li>
+
+          <li>
+            <a href="/download.html" class="active">
+              Downloads
+            </a>
+          </li>
+
+          <li>
+            <a href="/contact.html" class="nav-btn">
+              Get Started
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="page-hero">
+
+    <h1>
+      <span>Downloads</span> & Resources
+    </h1>
+
+    <p>
+      Access useful recycling guides, educational materials,
+      documents and resources provided by Trash2Treasure.
+    </p>
+
+  </section>
+
+
+  <!-- ================= DOWNLOADS ================= -->
+
+  <section class="section downloads-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Available Downloads
+        </h2>
+
+        <p>
+          Browse our available resources and download the files
+          you need directly from this page.
+        </p>
+
+      </div>
+
+
+      <div class="downloads-grid">
+
+
+        <!-- ================= DOWNLOAD 1 ================= -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📄
+          </div>
+
+          <span class="file-type">
+            PDF
+          </span>
+
+          <h3>
+            Recycling Guide
+          </h3>
+
+          <p>
+            A simple guide explaining common recyclable materials
+            and basic recycling practices.
+          </p>
+
+          <div class="download-info">
+            <span>PDF Document</span>
+            <span>2.4 MB</span>
+          </div>
+
+          <!--
+            DEVELOPER:
+            Put your file inside the "downloads" folder.
+
+            Example:
+            downloads/recycling-guide.pdf
+
+            Then change the href below if required.
+          -->
+
+          <a
+            href="downloads/recycling-guide.pdf"
+            class="download-btn"
+            download
+          >
+            ⬇ Download
+          </a>
+
+        </div>
+
+
+        <!-- ================= DOWNLOAD 2 ================= -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📊
+          </div>
+
+          <span class="file-type">
+            PDF
+          </span>
+
+          <h3>
+            Waste Sorting Guide
+          </h3>
+
+          <p>
+            Learn how to separate paper, plastic, glass and metal
+            waste before sending it for recycling.
+          </p>
+
+          <div class="download-info">
+            <span>PDF Document</span>
+            <span>1.8 MB</span>
+          </div>
+
+          <a
+            href="downloads/waste-sorting-guide.pdf"
+            class="download-btn"
+            download
+          >
+            ⬇ Download
+          </a>
+
+        </div>
+
+
+        <!-- ================= DOWNLOAD 3 ================= -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            🌱
+          </div>
+
+          <span class="file-type">
+            PDF
+          </span>
+
+          <h3>
+            Green Living Guide
+          </h3>
+
+          <p>
+            Practical ideas for reducing waste and making
+            more environmentally responsible choices.
+          </p>
+
+          <div class="download-info">
+            <span>PDF Document</span>
+            <span>3.1 MB</span>
+          </div>
+
+          <a
+            href="downloads/green-living-guide.pdf"
+            class="download-btn"
+            download
+          >
+            ⬇ Download
+          </a>
+
+        </div>
+
+
+        <!-- ================= DOWNLOAD 4 ================= -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📘
+          </div>
+
+          <span class="file-type">
+            PDF
+          </span>
+
+          <h3>
+            Recycling Handbook
+          </h3>
+
+          <p>
+            A detailed reference covering recycling basics,
+            sorting and responsible waste management.
+          </p>
+
+          <div class="download-info">
+            <span>PDF Document</span>
+            <span>4.6 MB</span>
+          </div>
+
+          <a
+            href="downloads/recycling-handbook.pdf"
+            class="download-btn"
+            download
+          >
+            ⬇ Download
+          </a>
+
+        </div>
+
+
+        <!-- ================= DOWNLOAD 5 ================= -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📝
+          </div>
+
+          <span class="file-type">
+            PDF
+          </span>
+
+          <h3>
+            Community Recycling Kit
+          </h3>
+
+          <p>
+            Helpful educational material for schools, communities
+            and local recycling awareness activities.
+          </p>
+
+          <div class="download-info">
+            <span>PDF Document</span>
+            <span>2.9 MB</span>
+          </div>
+
+          <a
+            href="downloads/community-recycling-kit.pdf"
+            class="download-btn"
+            download
+          >
+            ⬇ Download
+          </a>
+
+        </div>
+
+
+        <!-- ================= DOWNLOAD 6 ================= -->
+
+        <div class="download-card">
+
+          <div class="download-icon">
+            📋
+          </div>
+
+          <span class="file-type">
+            PDF
+          </span>
+
+          <h3>
+            Waste Reduction Checklist
+          </h3>
+
+          <p>
+            A simple checklist to help households and organizations
+            reduce unnecessary waste.
+          </p>
+
+          <div class="download-info">
+            <span>PDF Document</span>
+            <span>1.2 MB</span>
+          </div>
+
+          <a
+            href="downloads/waste-reduction-checklist.pdf"
+            class="download-btn"
+            download
+          >
+            ⬇ Download
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= INFORMATION ================= -->
+
+  <section class="section info-section">
+
+    <div class="container">
+
+      <div class="info-box">
+
+        <div class="info-icon">
+          🔒
+        </div>
+
+        <h2>
+          Official Trash2Treasure Resources
+        </h2>
+
+        <p>
+          All resources displayed on this page are added and managed
+          by the website administrator. Visitors can only download
+          the files provided here. There is no file upload option
+          available on this page.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FAQ ================= -->
+
+  <section class="section faq-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Download FAQs
+        </h2>
+
+        <p>
+          Common questions about downloading resources from
+          Trash2Treasure.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+
+        <!-- FAQ 1 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            Can visitors upload files?
+
+            <span>+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              No. This page does not provide any upload functionality.
+              Only the website developer or administrator can add files
+              by editing the website code.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 2 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            How are files added?
+
+            <span>+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              The developer adds the file to the website's downloads
+              folder and updates the download link in the HTML code.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 3 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            Where should download files be stored?
+
+            <span>+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              You can create a folder called "downloads" in your
+              website directory and place your downloadable files there.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 4 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            Can I use a different file type?
+
+            <span>+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. The download links can point to PDFs, documents,
+              ZIP files, images or other files supported by your website.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 5 -->
+
+        <div class="faq-item">
+
+          <button class="faq-question" type="button">
+
+            Do I need a database for downloads?
+
+            <span>+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              No. If the files and links are managed directly in the
+              HTML code, a database is not required for this page.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <div class="container">
+
+    <section class="cta">
+
+      <h2>
+        Want to Learn More?
+      </h2>
+
+      <p>
+        Explore how Trash2Treasure works and discover simple ways
+        to turn waste into valuable resources.
+      </p>
+
+      <a href="howitworks.html">
+        How It Works
+      </a>
+
+    </section>
+
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="footer-container">
+
+
+      <!-- FOOTER ABOUT -->
+
+      <div>
+
+        <h3>
+          ♻ Trash2Treasure
+        </h3>
+
+        <p>
+          Turning waste into value, one recyclable item at a time.
+          Together, we can create a cleaner and greener planet.
+        </p>
+
+      </div>
+
+
+      <!-- FOOTER LINKS -->
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#services">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="howitworks.html">
+              How It Works
+            </a>
+          </li>
+
+          <li>
+            <a href="downloads.html">
+              Downloads
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- FOOTER CONTACT -->
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <ul>
+
+          <li>
+            📧 hello@trash2treasure.com
+          </li>
+
+          <li>
+            📞 +91 98765 43210
+          </li>
+
+          <li>
+            📍 India
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Trash2Treasure. All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    const questions =
+      document.querySelectorAll(".faq-question");
+
+
+    questions.forEach(function(question) {
+
+      question.addEventListener("click", function() {
+
+        const currentItem =
+          question.parentElement;
+
+        const isOpen =
+          currentItem.classList.contains("open");
+
+
+        // Close all FAQ items
+
+        document.querySelectorAll(".faq-item")
+          .forEach(function(item) {
+
+            item.classList.remove("open");
+
+          });
+
+
+        // Open clicked FAQ
+
+        if (!isOpen) {
+
+          currentItem.classList.add("open");
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+
+</body>
+</html>

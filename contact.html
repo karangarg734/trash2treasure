@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Contact Trash2Treasure for recycling questions, partnerships, support and more.">
+
+  <title>Contact Us | Trash2Treasure</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f5fff7;
+      color: #173b24;
+      line-height: 1.6;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      height: 75px;
+      margin: auto;
+      padding: 0 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-size: 25px;
+      font-weight: bold;
+      color: #17863d;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+
+      border-radius: 50%;
+      background: #17863d;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 22px;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #244d31;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #18a34a;
+    }
+
+    .nav-btn {
+      background: #17863d;
+      color: white !important;
+
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+
+    .nav-btn:hover {
+      background: #0f6b2e;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .page-hero {
+      padding: 90px 25px;
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(232, 255, 238, 0.96),
+          rgba(193, 244, 207, 0.9)
+        );
+    }
+
+    .page-hero h1 {
+      font-size: 52px;
+      color: #124b27;
+      margin-bottom: 15px;
+    }
+
+    .page-hero h1 span {
+      color: #18a34a;
+    }
+
+    .page-hero p {
+      max-width: 700px;
+      margin: auto;
+
+      font-size: 18px;
+      color: #597060;
+    }
+
+
+    /* ================= COMMON ================= */
+
+    .section {
+      padding: 85px 25px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+      color: #124b27;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      max-width: 650px;
+      margin: auto;
+      color: #617568;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact-section {
+      background: #f5fff7;
+    }
+
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 0.9fr 1.4fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+
+
+    /* ================= CONTACT INFO ================= */
+
+    .contact-info {
+      background: linear-gradient(
+        145deg,
+        #176b35,
+        #25a653
+      );
+
+      color: white;
+
+      padding: 40px;
+
+      border-radius: 25px;
+
+      box-shadow: 0 15px 35px rgba(23, 107, 53, 0.15);
+    }
+
+    .contact-info h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info > p {
+      color: #d9f8e1;
+      margin-bottom: 35px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+
+      margin-bottom: 25px;
+    }
+
+    .contact-icon {
+      min-width: 45px;
+      height: 45px;
+
+      border-radius: 12px;
+
+      background: rgba(255, 255, 255, 0.15);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 20px;
+    }
+
+    .contact-item h3 {
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+
+    .contact-item p {
+      color: #d9f8e1;
+      font-size: 14px;
+    }
+
+    .contact-item a {
+      color: #d9f8e1;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contact-item a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+
+    /* ================= SOCIAL ================= */
+
+    .social-links {
+      margin-top: 35px;
+      padding-top: 25px;
+
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .social-links h3 {
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+
+      border-radius: 50%;
+
+      background: rgba(255,255,255,0.15);
+      color: white;
+
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: white;
+      color: #176b35;
+      transform: translateY(-3px);
+    }
+
+
+    /* ================= FORM ================= */
+
+    .contact-form-box {
+      background: white;
+
+      padding: 40px;
+
+      border-radius: 25px;
+
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+    }
+
+    .contact-form-box h2 {
+      color: #124b27;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .contact-form-box > p {
+      color: #687b6d;
+      margin-bottom: 25px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+
+      color: #244d31;
+      font-size: 14px;
+      font-weight: bold;
+
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+
+      padding: 13px 15px;
+
+      border: 1px solid #d6e7da;
+      border-radius: 10px;
+
+      outline: none;
+
+      color: #244d31;
+      background: #fbfffc;
+
+      font-size: 14px;
+
+      transition: 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #18a34a;
+
+      box-shadow:
+        0 0 0 3px rgba(24, 163, 74, 0.10);
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+
+      padding: 14px 25px;
+
+      border: none;
+      border-radius: 30px;
+
+      background: #17863d;
+      color: white;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #0f6b2e;
+      transform: translateY(-2px);
+    }
+
+    .form-note {
+      margin-top: 12px;
+
+      text-align: center;
+
+      color: #8a9b90;
+      font-size: 12px;
+    }
+
+
+    /* ================= WHY CONTACT ================= */
+
+    .contact-reasons {
+      background: #eaf9ee;
+    }
+
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .reason-card {
+      background: white;
+
+      padding: 30px 25px;
+
+      border-radius: 20px;
+
+      text-align: center;
+
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+      transition: 0.3s;
+    }
+
+    .reason-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .reason-icon {
+      width: 65px;
+      height: 65px;
+
+      margin: 0 auto 18px;
+
+      border-radius: 18px;
+
+      background: #dff8e6;
+      color: #17863d;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 30px;
+    }
+
+    .reason-card h3 {
+      color: #176b35;
+      margin-bottom: 8px;
+    }
+
+    .reason-card p {
+      color: #687b6d;
+      font-size: 14px;
+    }
+
+
+    /* ================= FAQ ================= */
+
+    .faq-section {
+      background: #f5fff7;
+    }
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: white;
+
+      margin-bottom: 15px;
+
+      border-radius: 12px;
+      overflow: hidden;
+
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-question {
+      width: 100%;
+
+      padding: 20px 25px;
+
+      border: none;
+      background: white;
+
+      text-align: left;
+
+      color: #176b35;
+      font-size: 17px;
+      font-weight: bold;
+
+      cursor: pointer;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-question span {
+      font-size: 25px;
+      transition: 0.3s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+
+      padding: 0 25px;
+
+      color: #687b6d;
+
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 200px;
+      padding-bottom: 20px;
+    }
+
+    .faq-item.open .faq-question span {
+      transform: rotate(45deg);
+    }
+
+
+    /* ================= MAP / LOCATION ================= */
+
+    .location-section {
+      background: #eaf9ee;
+    }
+
+    .location-box {
+      max-width: 1000px;
+      min-height: 280px;
+
+      margin: auto;
+
+      border-radius: 25px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #c5f2d0,
+          #68ca84
+        );
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 40px;
+
+      box-shadow: 0 15px 35px rgba(25, 120, 55, 0.10);
+    }
+
+    .location-content {
+      background: rgba(255,255,255,0.92);
+
+      padding: 30px;
+
+      border-radius: 20px;
+
+      max-width: 500px;
+    }
+
+    .location-content .location-icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .location-content h2 {
+      color: #124b27;
+      margin-bottom: 8px;
+    }
+
+    .location-content p {
+      color: #617568;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta {
+      max-width: 1050px;
+
+      margin: 80px auto;
+
+      padding: 60px 30px;
+
+      text-align: center;
+
+      border-radius: 30px;
+
+      background: linear-gradient(
+        135deg,
+        #176b35,
+        #25a653
+      );
+
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+
+      margin: 0 auto 25px;
+
+      color: #d9f8e1;
+    }
+
+    .cta a {
+      display: inline-block;
+
+      padding: 13px 27px;
+
+      border-radius: 30px;
+
+      background: white;
+      color: #176b35;
+
+      text-decoration: none;
+      font-weight: bold;
+
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      transform: translateY(-3px);
+      background: #edfff2;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #103b20;
+      color: white;
+
+      padding: 50px 25px 25px;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li,
+    footer a {
+      color: #b8d4c0;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .copyright {
+      max-width: 1100px;
+
+      margin: 35px auto 0;
+
+      padding-top: 20px;
+
+      border-top: 1px solid rgba(255,255,255,0.15);
+
+      text-align: center;
+
+      color: #9dbba5;
+
+      font-size: 13px;
+    }
+
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 900px) {
+
+      .navbar {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+      }
+
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+
+      .page-hero h1 {
+        font-size: 40px;
+      }
+
+      .page-hero p {
+        font-size: 16px;
+      }
+
+      .section-title h2 {
+        font-size: 32px;
+      }
+
+      .contact-info,
+      .contact-form-box {
+        padding: 25px 20px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .reasons-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location-box {
+        padding: 25px 15px;
+      }
+
+      .location-content {
+        padding: 25px 20px;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header>
+
+    <div class="navbar">
+
+      <div class="logo">
+
+        <div class="logo-icon">
+          ♻
+        </div>
+
+        Trash2Treasure
+
+      </div>
+
+
+      <nav>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#services">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="howitworks.html">
+              How It Works
+            </a>
+          </li>
+
+          <li>
+            <a href="downloads.html">
+              Downloads
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="active nav-btn">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="page-hero">
+
+    <h1>
+      Contact <span>Us</span>
+    </h1>
+
+    <p>
+      Have a question, suggestion or want to work with Trash2Treasure?
+      We'd love to hear from you.
+    </p>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="section contact-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Get In Touch
+        </h2>
+
+        <p>
+          Send us a message or use one of the contact options below.
+          Our team will get back to you as soon as possible.
+        </p>
+
+      </div>
+
+
+      <div class="contact-wrapper">
+
+
+        <!-- ================= CONTACT INFORMATION ================= -->
+
+        <div class="contact-info">
+
+          <h2>
+            Let's Connect
+          </h2>
+
+          <p>
+            Whether you have a recycling question, partnership idea
+            or general enquiry, feel free to contact us.
+          </p>
+
+
+          <!-- EMAIL -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              📧
+            </div>
+
+            <div>
+
+              <h3>
+                Email
+              </h3>
+
+              <a href="mailto:hello@trash2treasure.com">
+                hello@trash2treasure.com
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- PHONE -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              📞
+            </div>
+
+            <div>
+
+              <h3>
+                Phone
+              </h3>
+
+              <a href="tel:+919876543210">
+                +91 98765 43210
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- LOCATION -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              📍
+            </div>
+
+            <div>
+
+              <h3>
+                Location
+              </h3>
+
+              <p>
+                India
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- HOURS -->
+
+          <div class="contact-item">
+
+            <div class="contact-icon">
+              🕒
+            </div>
+
+            <div>
+
+              <h3>
+                Working Hours
+              </h3>
+
+              <p>
+                Monday - Saturday<br>
+                9:00 AM - 6:00 PM
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-links">
+
+            <h3>
+              Follow Us
+            </h3>
+
+            <div class="social-icons">
+
+              <a href="#" aria-label="Facebook">
+                f
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                ◎
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                𝕏
+              </a>
+
+              <a href="#" aria-label="LinkedIn">
+                in
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= CONTACT FORM ================= -->
+
+        <div class="contact-form-box">
+
+          <h2>
+            Send Us a Message
+          </h2>
+
+          <p>
+            Fill out the form below and we'll receive your enquiry.
+          </p>
+
+
+          <!--
+            IMPORTANT:
+
+            This form is frontend-only.
+
+            To actually receive messages, connect the form
+            to your backend, PHP, Formspree, Netlify Forms,
+            EmailJS, or another form-processing service.
+
+            There is NO file upload option in this form.
+          -->
+
+          <form
+            id="contactForm"
+            action="#"
+            method="POST"
+          >
+
+
+            <!-- NAME + EMAIL -->
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="name">
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="email">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                >
+
+              </div>
+
+            </div>
+
+
+            <!-- PHONE + SUBJECT -->
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label for="phone">
+                  Phone Number
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                >
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="subject">
+                  Subject
+                </label>
+
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                >
+
+                  <option value="">
+                    Select a subject
+                  </option>
+
+                  <option value="general">
+                    General Enquiry
+                  </option>
+
+                  <option value="recycling">
+                    Recycling Question
+                  </option>
+
+                  <option value="partnership">
+                    Partnership
+                  </option>
+
+                  <option value="services">
+                    Services
+                  </option>
+
+                  <option value="feedback">
+                    Feedback
+                  </option>
+
+                  <option value="other">
+                    Other
+                  </option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+              <label for="message">
+                Your Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+              type="submit"
+              class="submit-btn"
+            >
+              Send Message
+            </button>
+
+
+            <p class="form-note">
+              We respect your privacy and will only use your information
+              to respond to your enquiry.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= REASONS ================= -->
+
+  <section class="section contact-reasons">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          How Can We Help?
+        </h2>
+
+        <p>
+          Get in touch with us for different types of questions
+          and opportunities.
+        </p>
+
+      </div>
+
+
+      <div class="reasons-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="reason-card">
+
+          <div class="reason-icon">
+            ♻️
+          </div>
+
+          <h3>
+            Recycling Questions
+          </h3>
+
+          <p>
+            Need help understanding recycling or waste sorting?
+            Send us your question.
+          </p>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="reason-card">
+
+          <div class="reason-icon">
+            🤝
+          </div>
+
+          <h3>
+            Partnerships
+          </h3>
+
+          <p>
+            Interested in collaborating with Trash2Treasure?
+            We'd be happy to hear your ideas.
+          </p>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="reason-card">
+
+          <div class="reason-icon">
+            💡
+          </div>
+
+          <h3>
+            Suggestions
+          </h3>
+
+          <p>
+            Have an idea that could improve our services?
+            Share your feedback with us.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= LOCATION ================= -->
+
+  <section class="section location-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Find Us
+        </h2>
+
+        <p>
+          Trash2Treasure is focused on building cleaner and greener
+          communities.
+        </p>
+
+      </div>
+
+
+      <div class="location-box">
+
+        <div class="location-content">
+
+          <div class="location-icon">
+            📍
+          </div>
+
+          <h2>
+            Trash2Treasure
+          </h2>
+
+          <p>
+            India
+          </p>
+
+          <p>
+            Working towards a cleaner and more sustainable future.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FAQ ================= -->
+
+  <section class="section faq-section">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Contact FAQs
+        </h2>
+
+        <p>
+          Some common questions about contacting Trash2Treasure.
+        </p>
+
+      </div>
+
+
+      <div class="faq">
+
+
+        <!-- FAQ 1 -->
+
+        <div class="faq-item">
+
+          <button
+            class="faq-question"
+            type="button"
+          >
+
+            How can I contact Trash2Treasure?
+
+            <span>
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              You can contact us using the contact form, email address
+              or phone number provided on this page.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 2 -->
+
+        <div class="faq-item">
+
+          <button
+            class="faq-question"
+            type="button"
+          >
+
+            Can I ask a recycling question?
+
+            <span>
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. Select "Recycling Question" in the subject field
+              and explain your question in the message box.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 3 -->
+
+        <div class="faq-item">
+
+          <button
+            class="faq-question"
+            type="button"
+          >
+
+            Can organizations contact you for partnerships?
+
+            <span>
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. Select "Partnership" in the contact form and
+              provide information about your organization and proposal.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 4 -->
+
+        <div class="faq-item">
+
+          <button
+            class="faq-question"
+            type="button"
+          >
+
+            Is there an upload option?
+
+            <span>
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              No. The contact form does not allow visitors to upload
+              files or attachments.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- FAQ 5 -->
+
+        <div class="faq-item">
+
+          <button
+            class="faq-question"
+            type="button"
+          >
+
+            How quickly will I receive a response?
+
+            <span>
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Response times may vary depending on the type of enquiry
+              and when the message is received.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <div class="container">
+
+    <section class="cta">
+
+      <h2>
+        Ready to Make a Difference?
+      </h2>
+
+      <p>
+        Learn how simple recycling can help reduce waste
+        and create a cleaner future.
+      </p>
+
+      <a href="howitworks.html">
+        Learn How It Works
+      </a>
+
+    </section>
+
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="footer-container">
+
+
+      <!-- ABOUT -->
+
+      <div>
+
+        <h3>
+          ♻ Trash2Treasure
+        </h3>
+
+        <p>
+          Turning waste into value, one recyclable item at a time.
+          Together, we can create a cleaner and greener planet.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#services">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="howitworks.html">
+              How It Works
+            </a>
+          </li>
+
+          <li>
+            <a href="downloads.html">
+              Downloads
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- CONTACT -->
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <ul>
+
+          <li>
+            📧 hello@trash2treasure.com
+          </li>
+
+          <li>
+            📞 +91 98765 43210
+          </li>
+
+          <li>
+            📍 India
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Trash2Treasure. All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    /* ================= FAQ ================= */
+
+    const questions =
+      document.querySelectorAll(".faq-question");
+
+
+    questions.forEach(function(question) {
+
+      question.addEventListener("click", function() {
+
+        const currentItem =
+          question.parentElement;
+
+        const isOpen =
+          currentItem.classList.contains("open");
+
+
+        // Close all FAQ items
+
+        document.querySelectorAll(".faq-item")
+          .forEach(function(item) {
+
+            item.classList.remove("open");
+
+          });
+
+
+        // Open clicked FAQ
+
+        if (!isOpen) {
+
+          currentItem.classList.add("open");
+
+        }
+
+      });
+
+    });
+
+
+    /* ================= CONTACT FORM ================= */
+
+    const contactForm =
+      document.getElementById("contactForm");
+
+
+    contactForm.addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+
+      const name =
+        document.getElementById("name").value;
+
+
+      alert(
+        "Thank you, " +
+        name +
+        "! Your message has been received."
+      );
+
+
+      contactForm.reset();
+
+    });
+
+  </script>
+
+
+</body>
+</html>
